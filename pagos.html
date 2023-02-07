@@ -64,16 +64,14 @@ const capturar = () => {
     this.monto= parseFloat(monto);
     localStorage.setItem(lote,monto)
    
-    if(baseDatos == 0){
-        Swal.fire('Ingresa los datos, reinicia la pagina')
-    }
+  
    }
-    // const guardar = localStorage.setItem(lote, monto)
+   
    var loteCapturar = document.getElementById("lote").value;
    var montoCapturar = document.getElementById("monto").value;
    
    nuevoElemento = new Pagado (loteCapturar,montoCapturar)
-   //console.log(nuevoElemento)
+  
    
      
    agregar()
